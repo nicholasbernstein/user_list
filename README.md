@@ -11,4 +11,6 @@ This program is very simple:
   
 ## Run as follows: 
 
-'''powershell.exe -executionpolicy unrestricted -command  .\users_apps.ps1  -Servers '.\servers.csv' -Apps '.\applications.csv' -Output 'output.csv' -Excel'''
+
+     powershell.exe -executionpolicy unrestricted -command  .\users_apps.ps1  -Servers '.\servers.csv' -Apps '.\applications.csv' -Output 'output.csv' -Excel
+
