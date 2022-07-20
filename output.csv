@@ -1,19 +1,21 @@
 ﻿Server,Date,Time,Application,User,Memory,Path
-WINSERVER-1,07/19/2022,07/19/2022 03:05:12	Code,ansible,10.03MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:08	Code,ansible,33.89MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:13	Code,ansible,130.07MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:14	Code,ansible,11.9MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:15	Code,ansible,176.31MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:20	Code,ansible,44.45MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:20	Code,ansible,57.73MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:22	Code,ansible,41.86MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:28	Code,ansible,21.33MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:12	Code,ansible,10.03MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:08	Code,ansible,33.89MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:13	Code,ansible,130.07MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:14	Code,ansible,11.9MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:15	Code,ansible,176.31MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:20	Code,ansible,44.45MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:20	Code,ansible,57.73MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:22	Code,ansible,41.86MB,C:\Program Files\Microsoft VS Code\Code.exe
-WINSERVER-1,07/19/2022,07/19/2022 03:05:28	Code,ansible,21.33MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:53,Code,ansible,20.96MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,11.54MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:47,Code,ansible,30.61MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:45,Code,ansible,38.2MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,140.55MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,9.93MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,129.4MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:40,Code,ansible,31.98MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:45,Code,ansible,48.87MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:25:31,ImagingDevices,ansible,3.55MB,C:\Program Files (x86)\Windows Photo Viewer\ImagingDevices.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:53,Code,ansible,20.96MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,11.54MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:47,Code,ansible,30.61MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:45,Code,ansible,38.2MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,140.55MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,9.93MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:41,Code,ansible,129.4MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:40,Code,ansible,31.98MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:23:45,Code,ansible,48.87MB,C:\Program Files\Microsoft VS Code\Code.exe
+WINSERVER-1,07/20/2022,07/20/2022 21:25:31,ImagingDevices,ansible,3.55MB,C:\Program Files (x86)\Windows Photo Viewer\ImagingDevices.exe

@@ -52,16 +52,27 @@ Write-Host ""
 
 function ensureExcelModuleIsInstalledAndAvailable(){
     if (Get-Module -ListAvailable -Name "importexcel") {
+        Write-Host "[+] Importing importexcel module"
         Import-Module importexcel
     } 
     else {
-        Write-Host "installing importexcel module"
+        Write-Host "[+] installing importexcel module"
         Install-Module importexcel
         Import-Module importexcel
     }
 }
 
-ensureExcelModuleIsInstalledAndAvailable
+if ($Excel) {
+    try {
+        ensureExcelModuleIsInstalledAndAvailable
+    }
+
+    catch {
+        Write-Host "An error occured while trying to import or install the ImportExcel module"
+        Write-Host $_
+    }
+}
+
 
 
 function generateListOfServersFromCSVFile($filePath)
@@ -109,7 +120,7 @@ $csvContents = Invoke-Command -ComputerName $ServerList -ScriptBlock {
 
     function printCSV($a){
 		# $using:LE passes local variable to be used in scriptbllock
-        $line = $a.Server + $using:del + $a.Date + $using:del + $a.Time + "`t" + $a.Application + $using:del + $a.User + $using:del + $a.Memory + $using:del + $a.Path + $using:LE
+        $line = $a.Server + $using:del + $a.Date + $using:del + $a.Time + $using:del + $a.Application + $using:del + $a.User + $using:del + $a.Memory + $using:del + $a.Path + $using:LE
         return $line
         #$a.values | export-csv
     }
@@ -121,7 +132,7 @@ $csvContents = Invoke-Command -ComputerName $ServerList -ScriptBlock {
         return $size
     }
 
-    function getProcessInfoFor32B($process) {
+    function getProcessInfo($process) {
 
         $memInMB = convertAndFormatInMB($process.PrivateMemorySize[0] -as[int])
         $procInfo   = @{
@@ -143,21 +154,6 @@ $csvContents = Invoke-Command -ComputerName $ServerList -ScriptBlock {
         return $user
     }
 
-    function getProcessInfoFor64B($process) {
-        $memInMB = convertAndFormatInMB($process.PrivateMemorySize[0] -as[int])
-        $procInfo   = @{
-        Server      = $env:computername
-        Date        = Get-Date -UFormat "%m/%d/%Y" 
-        Time        = $process.StartTime
-        Application = $process.Name
-        User        = stripDomainFromUsername($process.UserName)
-        Memory      = $memInMB + "MB"
-        Path        = $process.Path
-        }
-        return $ProcInfo
-    }
-
-
 
     function findMatchingProcessesAndReturnCSVFormattedRows($applicationList)
     {
@@ -170,17 +166,7 @@ $csvContents = Invoke-Command -ComputerName $ServerList -ScriptBlock {
                 $exeName = $MyProc.Name + ".exe"
                 #write-host $exeName "--- $applicationName"
                 if ( $exeName -eq $applicationName) {
-                    #write-host "[+] Match for for $applicationname"
-                    # 32b programs return a string for their attributes instead of an object
-                    if ($myProc.Path.GetType().Name -eq 'String') {
-
-                        $procInfo = getProcessInfoFor32B($myProc)
-
-                    } else {
-
-                       $procInfo = getProcessInfoFor64B($myProc)
-                    }
-
+                    $procInfo = getProcessInfo($myProc)
                 #$rows += printCSV($procInfo)
                 printCSV($procInfo)
                 $procInfo = @{}
